@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import etlRoutes from "./routes/etl.routes.js";
 
 dotenv.config();
 
@@ -8,9 +9,9 @@ app.use(express.json());
 
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
 
-app.get("/health", (req, res) => {
-    res.status(200).json({ status : "OK" });
-})
+// Rutas ETL
+app.use("/api",etlRoutes);
+
 
 app.listen(PORT, () => {
     console.log(`API corriendo en http://localhost:${PORT}`);
