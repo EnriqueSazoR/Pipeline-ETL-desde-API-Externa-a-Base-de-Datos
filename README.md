@@ -40,4 +40,4 @@ Se utiliza ON CONFLICT para evitar duplicados.
 - Implementación del módulo Transform
 - Implementación del módulo Load
 - Automatización con scheduler
-- Endpoints analítico# Pipeline-ETL-desde-API-Externa-a-Base-de-Datos
+- Endpoints analítico
